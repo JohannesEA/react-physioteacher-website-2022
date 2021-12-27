@@ -20,12 +20,7 @@ const AppInfo = () => {
 {width > 800  ? <><Left>
         <Title color="color-2" text="App" />
         <Text text="Vi ønsker å optimalisere ortopediske, revmatiske og kroniske pasienter sin gjennomførelse og oppfølgning til behandlingen som de får hos terapeuter rundt om i landet ved hjelp av en app. Denne appen skal fungere som et supplerende tiltak til allerede eksisterende behandling og klinikker kan anbefale appen til sine pasienter for å tilby et bedre oppfølgingstilbud. Under ser du vår visjon for hvordan vi ønsker appdesignet skal se ut." color="color-2"/>
-        <ButtonContainer>
-        <Link to="contact" spy={true} smooth={true} offset={-100} duration={300}>
-        <Button text="Kontakt Oss" bc="color-2" />
 
-</Link>
-        </ButtonContainer>
       </Left>
       <Right 
 >
@@ -57,11 +52,7 @@ const AppInfo = () => {
       </Right>
       <Left>
       <Text text="Vi ønsker å optimalisere ortopediske, revmatiske og kroniske pasienter sin gjennomførelse og oppfølgning til behandlingen som de får hos terapeuter rundt om i landet ved hjelp av en app. Denne appen skal fungere som et supplerende tiltak til allerede eksisterende behandling og klinikker kan anbefale appen til sine pasienter for å tilby et bedre oppfølgingstilbud. Under ser du vår visjon for hvordan vi ønsker appdesignet skal se ut." color="color-2"/>
-        <ButtonContainer>
-        <Link to="contact" spy={true} smooth={true} offset={-100} duration={300}>
-        <Button text="Kontakt Oss" bc="color-2" />
 
-</Link>        </ButtonContainer>
       </Left>
       </>} 
  

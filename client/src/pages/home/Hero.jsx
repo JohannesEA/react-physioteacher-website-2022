@@ -19,7 +19,7 @@ const Hero = () => {
         <Button text="Kontakt Oss" bc="color-2" />
 
           </Link>
-          <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>
+          <Link to="app" spy={true} smooth={true} offset={-100} duration={300}>
           <Button text="App" bc="color-1" />
 
           </Link>
@@ -44,7 +44,7 @@ const Hero = () => {
         <Button text="Kontakt Oss" bc="color-2" />
 
           </Link>
-          <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>
+          <Link to="app" spy={true} smooth={true} offset={-100} duration={300}>
           <Button text="App" bc="color-1" />
 
           </Link>
