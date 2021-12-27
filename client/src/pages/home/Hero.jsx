@@ -13,14 +13,14 @@ const Hero = () => {
         {width > 800  ? <><Left>
         {/* <Title color="color-2" text="MoJo Websites" /> */}
         <span></span>
-        <Text text="MoJo Websites for deg som ønsker en enkel og perfekt fungerende nettside." color="color-2"/>
+        <Text text="Vi ønsker å skape en diagnosebasert app som skal gi pasienter et bedre oppfølgingstilbud til rehabilitering." color="color-2"/>
         <ButtonContainer>
         <Link to="contact" spy={true} smooth={true} offset={-100} duration={300}>
         <Button text="Kontakt Oss" bc="color-2" />
 
           </Link>
           <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>
-          <Button text="Prosjekter" bc="color-1" />
+          <Button text="App" bc="color-1" />
 
           </Link>
         </ButtonContainer>
@@ -38,14 +38,14 @@ const Hero = () => {
       />
       </Right>
       <Left>
-        <Text text="MoJo Websites for deg som ønsker en enkel og perfekt fungerende nettside." color="color-2"/>
+        <Text text="Vi ønsker å skape en diagnosebasert app som skal gi pasienter et bedre oppfølgingstilbud til rehabilitering." color="color-2"/>
         <ButtonContainer>
         <Link to="contact" spy={true} smooth={true} offset={-100} duration={300}>
         <Button text="Kontakt Oss" bc="color-2" />
 
           </Link>
           <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>
-          <Button text="Prosjekter" bc="color-1" />
+          <Button text="App" bc="color-1" />
 
           </Link>
         </ButtonContainer>
@@ -89,14 +89,14 @@ const ButtonContainer = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-min-width: 12em;
+min-width: 9em;
 margin: 0 auto;
 flex-direction: row;
 
 
 
 @media (max-width: 800px){
-    min-width: 11em;
+  min-width: 8em;
 }
 
 @media (max-width: 250px){

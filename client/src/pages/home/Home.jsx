@@ -1,10 +1,11 @@
 import styled from "styled-components";
-// import Footer from "../../components/footer/Footer";
+import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
-// import About from "./About";
-// import Contact from "./Contact";
+import About from "./About";
+import Design from "./Design";
+import Contact from "./Contact";
 import Hero from "./Hero";
-// import Portfolio from "./Portfolio";
+import AppInfo from "./AppInfo";
 // import Services from "./Services";
 
 
@@ -13,11 +14,12 @@ const Home = () => {
         <Container>
             <Navbar/>
             <Hero/>
-            {/* <About/>
-            <Services/>
-            <Portfolio/>
+            <About/>
+            <AppInfo/>
+            <Design/>
             <Contact/>
-            <Footer/> */}
+            <Footer/>
+    
         </Container>
     )
 }

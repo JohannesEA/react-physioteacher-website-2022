@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Title = ({ text, color }) => {
   const [textColor, setTextColor] = useState("");
   const COLORONE = "black";
-  const COLORTWO = "#594AE3";
+  const COLORTWO = "#4770A6";
 
  
   useEffect(() => {

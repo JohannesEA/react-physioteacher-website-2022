@@ -17,8 +17,7 @@ const Footer = () => {
       </Top>
 
       <Bottom>
-      Copyright mojo-websites.no
-      </Bottom>
+Website Created By mojo-websites.no      </Bottom>
     </Container>
   );
 };

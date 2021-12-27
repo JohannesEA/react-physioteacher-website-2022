@@ -36,13 +36,13 @@ const Navbar = () => {
             {" "}
             <Menulink onClick={() => setOpen(!isOpen)}>Om</Menulink>
           </Link>
-          <Link to="services" spy={true} smooth={true} offset={-100} duration={300}>
+          <Link to="app" spy={true} smooth={true} offset={-100} duration={300}>
             {" "}
-            <Menulink onClick={() => setOpen(!isOpen)}>Tjenester</Menulink>
+            <Menulink onClick={() => setOpen(!isOpen)}>App</Menulink>
           </Link>
-          <Link to="portfolio" spy={true} smooth={true} offset={-100} duration={300}>
+          <Link to="design" spy={true} smooth={true} offset={-100} duration={300}>
             {" "}
-            <Menulink onClick={() => setOpen(!isOpen)}>Portfølje</Menulink>
+            <Menulink onClick={() => setOpen(!isOpen)}>Design</Menulink>
           </Link>
           <Link to="contact" spy={true} smooth={true} offset={-100} duration={300}>
             {" "}
