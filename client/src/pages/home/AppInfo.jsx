@@ -15,7 +15,7 @@ const AppInfo = () => {
     }
 
     return (
-        <Container id="about">
+        <Container id="app">
 
 {width > 800  ? <><Left>
         <Title color="color-2" text="App" />
