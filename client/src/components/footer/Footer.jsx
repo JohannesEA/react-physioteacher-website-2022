@@ -13,14 +13,14 @@ const Footer = () => {
               smooth={true}
               offset={-100}
               duration={300}
-            >                <Image src="/assets/logos/logo.png" alt="footer-img"/> </Link>
+            >                <Image src="/assets/logos/logo7.png" alt="footer-img"/> </Link>
  
       </Top>
 
 
-<Bottom2>
+<Bottom2 >
 Copyright  <AiOutlineCopyrightCircle/>   physioteacher.no    </Bottom2>
-<Bottom>
+<Bottom onClick={() => window.location.href="https://mojo-websites.no/"}>
 Website Created By mojo-websites.no      </Bottom>
     </Container>
   );
@@ -33,6 +33,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin-top: 3em;
+background-color: var(--color-1);
 `;
 
 const Top = styled.div`
@@ -49,21 +50,25 @@ max-height: 40vh;
 
 
 const Bottom = styled.div`
-background-color: var(--color-1);
-height:  5vh;
-width: 100%;
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: .8rem;
-`;
-
-const Bottom2 = styled.div`
 background-color: var(--color-2);
 height:  5vh;
 width: 100%;
 color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: .8rem;
+
+&:hover {
+  color: var(--color-1);
+}
+`;
+
+const Bottom2 = styled.div`
+background-color: var(--color-1);
+height:  5vh;
+width: 100%;
+color: white;
 display: flex;
 align-items: center;
 justify-content: center;

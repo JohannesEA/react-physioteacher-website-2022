@@ -204,6 +204,7 @@ const ContactInfoContainer = styled.div`
   box-shadow: 0px 0px 4px 2px var(--color-3);
   border-radius: 1em;
   margin-bottom: 2em;
+  padding: 1em;
 
 
   @media (max-width: 800px) {

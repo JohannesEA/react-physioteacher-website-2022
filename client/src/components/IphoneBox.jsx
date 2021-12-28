@@ -21,7 +21,7 @@ const Container = styled.div`
   max-height: 25em;
   max-width: 25em;
   margin: 0 auto;
-  color: var(--color-3);
+  color: var(--color-1);
 
   &:hover{
     color: black;

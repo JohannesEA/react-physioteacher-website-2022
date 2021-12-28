@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import { Spiral as Hamburger } from "hamburger-react";
 import getWindowDimensions from "../../commonFunctions/Dimentions";
 import { useState } from "react";
@@ -79,6 +79,28 @@ const Container = styled.div`
 //   margin-left: 20px;
 // `;
 
+const animationOne = keyframes`
+0%{
+  opacity: 0;
+},
+100%{
+  opacity: 1;
+
+}
+
+`;
+
+
+const animationTwo = keyframes`
+0%{
+  right: -100%;
+},
+100%{
+  right: 0;
+}
+
+`;
+
 const Menu = styled.div`
   display: flex;
   background-color: var(--color-2);
@@ -88,11 +110,12 @@ const Menu = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0;
-    width: 70%;
-    height: 100vh;
+    width: 100%;
+    height: 60vh;
     position: absolute;
     top: 5em;
     left: auto;
+    animation: ${animationTwo} .3s linear;
     right: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
     opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   }
