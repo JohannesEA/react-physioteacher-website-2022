@@ -1,28 +1,31 @@
 import styled from "styled-components";
 
-const ImageBox = ({ src, alt, text, title }) => {
+const IconBox = ({ src, alt, text }) => {
+
   return (
     <Container>
       <ImageContainer>
       <Image src={src} alt={alt} />
       </ImageContainer>
-      <Title>{title}</Title>
+      {/* <Title>{title}</Title> */}
       <Text>{text}</Text>
     </Container>
   );
 };
 
-export default ImageBox;
+export default IconBox;
 
 const Container = styled.div`
   display: flex;
+  flex: 1;
   align-items: center;
   flex-direction: column;
   text-align: center;
   max-height: 20em;
   max-width: 20em;
-  margin: 0 auto;
-  color: var(--color-3);
+  margin: .5em auto;
+  color: var(--color-1);
+  background-color: white;
 
   &:hover{
     color: black;
@@ -36,29 +39,14 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-max-height: 10em;
-max-width: 10em;
+max-height: 2em;
+max-width: 2em;
 border-radius: .5em .5em 0 0;
 
 @media (max-width: 800px){
-    max-height: 8em;
-    max-width: 8em;
+    max-height: 1.5em;
+    max-width: 1.5em;
 
-}
-
-@media (max-width: 400px){
-    max-height: 6em;
-    max-width: 6em;
-}
-
-@media (max-width: 350px){
-    max-height: 4em;
-    max-width: 4em;
-}
-
-@media (max-width: 300px){
-    max-height: 2em;
-    max-width: 2em;
 }
   
 `;

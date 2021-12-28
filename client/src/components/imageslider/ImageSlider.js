@@ -4,6 +4,7 @@ import React, { useState } from "react";
 // 1.
 import Slider from "react-slick";
 import { GrNext, GrPrevious } from "react-icons/gr";
+import ImageBox from "../IphoneBox";
 
 import "./imageslider.css";
 
@@ -66,7 +67,8 @@ const ImageSlider = ({ images, slidesToShow = 3 }) => {
         className={idx === imageIndex ? "activeSlide" : "slide"}
         key={image.id}
       >
-        <div className="slideWrapper">
+        <ImageBox src={image.src} alt={image.alt} text={image.text}/>
+        {/* <div className="slideWrapper">
           {image.code ? (
             image.code
           ) : (
@@ -76,7 +78,7 @@ const ImageSlider = ({ images, slidesToShow = 3 }) => {
               alt={image.alt}
             />
           )}
-        </div>
+        </div> */}
         {/* <button  onClick={() => (window.location.href = image.url)}> Mer Info</button> */}
 
       </div>

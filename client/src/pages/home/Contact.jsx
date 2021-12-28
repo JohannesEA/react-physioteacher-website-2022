@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { useState } from "react";
 import Button from "../../components/Button";
 import { send } from "emailjs-com";
-import Title from "../../components/Title"
+import Title from "../../components/Title";
+import IconBox from "../../components/IconBox";
 
 const Contact = () => {
   const [confirmationMessage, setConfirmationMessage] = useState("");
@@ -64,6 +65,13 @@ const Contact = () => {
   return (
     <Container id="contact">
       <Title text="Kontakt" color="color-2" data-aos="fade-up"></Title>
+
+      <ContactInfoContainer>
+      <IconBox src="/assets/logos/email.png" alt="email-logo"  text="+47 93094075"/>
+        <IconBox src="/assets/logos/phone.png" alt="phone-logo"   text="kleivenmathias@gmail.com"/>
+
+
+      </ContactInfoContainer>
 
       <ContactForm
         data-aos="fade-up"
@@ -182,4 +190,24 @@ const ErrorMessage = styled.p`
 const ConfirmationMessage = styled.p`
   font-size: 1.2rem;
   color: #032859;
+`;
+
+const ContactInfoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
+  width: 80%;
+  background-color: white;
+  height: auto;
+  box-shadow: 0px 0px 4px 2px var(--color-3);
+  border-radius: 1em;
+  margin-bottom: 2em;
+
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;

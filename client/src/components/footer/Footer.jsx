@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link} from "react-scroll";
+import {AiOutlineCopyrightCircle} from "react-icons/ai"
 
 const Footer = () => {
   return (
@@ -16,7 +17,10 @@ const Footer = () => {
  
       </Top>
 
-      <Bottom>
+
+<Bottom2>
+Copyright  <AiOutlineCopyrightCircle/>   physioteacher.no    </Bottom2>
+<Bottom>
 Website Created By mojo-websites.no      </Bottom>
     </Container>
   );
@@ -49,6 +53,17 @@ background-color: var(--color-1);
 height:  5vh;
 width: 100%;
 color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: .8rem;
+`;
+
+const Bottom2 = styled.div`
+background-color: var(--color-2);
+height:  5vh;
+width: 100%;
+color: black;
 display: flex;
 align-items: center;
 justify-content: center;
